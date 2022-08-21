@@ -37,7 +37,7 @@ def fetch_isimip_file(var, gcm, ssp):
     if gcm not in ['gfdl-esm4', 'ipsl-cm6a-lr', 'mpi-esm1-2-hr', 'mri-esm2-0', 'ukesm1-0-ll']:
         raise InvalidParamsError(f'gcb {gcm} not correct')
 
-    if ssp not in ['historical', 'ssp126', 'ssp370' and 'ssp585']:
+    if ssp not in ['historical', 'ssp126', 'ssp370', 'ssp585']:
         raise InvalidParamsError(f'gcb {gcm} not correct')
 
     rea = 'r1i1p1f2' if gcm == 'ukesm1-0-ll' else 'r1i1p1f1'
