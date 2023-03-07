@@ -12,11 +12,9 @@ from oggm import entity_task
 from oggm import utils, cfg
 from oggm.core.massbalance import (MultipleFlowlineMassBalance,
                                    ConstantMassBalance,
-                                   PastMassBalance,
                                    RandomMassBalance)
 
 from oggm.shop.gcm_climate import process_gcm_data
-
 from oggm.core.flowline import FileModel, flowline_model_run
 from oggm.exceptions import InvalidParamsError
 
